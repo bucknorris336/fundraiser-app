@@ -1,7 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ItemPage from "./ItemPage"; // Import your ItemPage component
-import DonationsPage from "./DonationsPage"; // Import your DonationsPage component
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ItemPage1 from "./items/ItemPage1";
+import ItemPage2 from "./items/ItemPage2";
+import ItemPage3 from "./items/ItemPage3";
+import ItemPage4 from "./items/ItemPage4";
+import ItemPage5 from "./items/ItemPage5";
+import ItemPage6 from "./items/ItemPage6";
 import { createTheme, ThemeProvider } from "@mui/material";
 import HomePage from "./HomePage";
 import Header from "./Header";
@@ -12,13 +16,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/item/:itemId" component={ItemPage} />
-          <Route path="/donations/:itemId" component={DonationsPage} />
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/ItemPage1" element={<ItemPage1 />} />
+          <Route exact path="/ItemPage2" element={<ItemPage2 />} />
+          <Route exact path="/ItemPage3" element={<ItemPage3 />} />
+          <Route exact path="/ItemPage4" element={<ItemPage4 />} />
+          <Route exact path="/ItemPage5" element={<ItemPage5 />} />
+          <Route exact path="/ItemPage6" element={<ItemPage6 />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

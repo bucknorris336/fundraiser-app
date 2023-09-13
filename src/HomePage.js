@@ -5,13 +5,14 @@ import {
   CardMedia,
   Typography,
   Button,
-  CardActionArea,
   Grid,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const items = [
   {
     name: "Mastersounds SL-1200MK2",
+    id: 1,
     thumbnail:
       "https://mastersounds.co.uk/cdn/shop/products/mastersounds-sl-blu-666819_1300x.jpg?v=1690510491",
     description:
@@ -19,6 +20,7 @@ const items = [
   },
   {
     name: "Varia Instruments RDM40",
+    id: 2,
     thumbnail:
       "https://www.varia-instruments.com/images/rdm40/RDM40_scene_4_full.jpg",
     description:
@@ -26,6 +28,7 @@ const items = [
   },
   {
     name: "Condesa SE",
+    id: 3,
     thumbnail:
       "https://condesaelectronics.com/cdn/shop/files/DSC08397-Finalweb_0aea56ff-e5e3-4b69-8350-15bfdf85d22a_1080x.png?v=1693554792",
     description:
@@ -33,6 +36,7 @@ const items = [
   },
   {
     name: "Isonoe ISO420",
+    id: 4,
     thumbnail:
       "https://thevinylfactory.com/wp-content/uploads/2021/11/isonoe-ISO420S-mixer-3.jpg",
     description:
@@ -40,6 +44,7 @@ const items = [
   },
   {
     name: "Mastersounds Four Valve MK2",
+    id: 5,
     thumbnail:
       "https://mastersounds.co.uk/cdn/shop/products/four-valve-mk2-black-dj-mixer-710703_1080x.jpg?v=1678924565",
     description:
@@ -47,6 +52,7 @@ const items = [
   },
   {
     name: "Technics SL-1200MK7",
+    id: 6,
     thumbnail:
       "https://media.sweetwater.com/api/i/q-82__w-750__f-webp__ha-4e66104e6c6c41dd__hmac-ef5f8627e8f5a67849234c709ec0b8f0226a9755/images/items/750/SL1200mk7S-large.jpg.auto.webp",
     description:
@@ -54,6 +60,7 @@ const items = [
   },
   {
     name: "Alpha Recording System 9100BW",
+    id: 7,
     thumbnail:
       "https://storage.googleapis.com/studio-design-asset-files/projects/1pqDPop6qj/s-2000x1733_v-frms_webp_c3fb4395-65f4-465f-b8d0-8f379d7e65d0_middle.webp",
     description:
@@ -63,40 +70,36 @@ const items = [
 
 function HomePage() {
   return (
-    <Grid
-      container
-      spacing={2}
-      direction="row"
-      // justifyContent="center"
-      alignItems="center"
-      padding={4}
-    >
+    <Grid container spacing={2} direction="row" alignItems="center" padding={4}>
       {items.map((item, index) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
           <Card sx={{ width: 345, height: 575 }}>
-            <CardActionArea>
-              <CardMedia
-                height={276}
-                component="img"
-                alt={item.name}
-                image={item.thumbnail}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.name}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ height: 122, overflow: "hidden" }}
-                >
-                  {item.description}
-                </Typography>
-                <Button variant="contained" color="primary">
-                  View Item
-                </Button>
-              </CardContent>
-            </CardActionArea>
+            <CardMedia
+              height={276}
+              component="img"
+              alt={item.name}
+              image={item.thumbnail}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {item.name}
+              </Typography>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ height: 122, overflow: "hidden" }}
+              >
+                {item.description}
+              </Typography>
+              <Button
+                component={Link}
+                to={`ItemPage${item.id}`}
+                variant="contained"
+                color="primary"
+              >
+                View Item
+              </Button>
+            </CardContent>
           </Card>
         </Grid>
       ))}
