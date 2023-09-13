@@ -6,6 +6,7 @@ import ItemPage3 from "./items/ItemPage3";
 import ItemPage4 from "./items/ItemPage4";
 import ItemPage5 from "./items/ItemPage5";
 import ItemPage6 from "./items/ItemPage6";
+import ItemPage7 from "./items/ItemPage7";
 import { createTheme, ThemeProvider } from "@mui/material";
 import HomePage from "./HomePage";
 import Header from "./Header";
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/ItemPage4" element={<ItemPage4 />} />
           <Route exact path="/ItemPage5" element={<ItemPage5 />} />
           <Route exact path="/ItemPage6" element={<ItemPage6 />} />
+          <Route exact path="/ItemPage7" element={<ItemPage7 />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
