@@ -34,9 +34,30 @@ const items = [
   {
     name: "Isonoe ISO420",
     thumbnail:
-      "https://www.isonoe.com/wp-content/gallery/iso420-2-1/thumbs/thumbs_iso-3.jpg",
+      "https://thevinylfactory.com/wp-content/uploads/2021/11/isonoe-ISO420S-mixer-3.jpg",
     description:
       "Built around the same mastering-grade analogue circuitry used in our rack-mount units Audio measurement figures which exceed any analogue mixer we have ever tested. Powered from a compact version of our LRPS power supply. Now ships with a front headphone socket as well as rear.",
+  },
+  {
+    name: "Mastersounds Four Valve MK2",
+    thumbnail:
+      "https://mastersounds.co.uk/cdn/shop/products/four-valve-mk2-black-dj-mixer-710703_1080x.jpg?v=1678924565",
+    description:
+      "Valve MK2 encompasses the true spirit of its predecessor, with its esoteric principles of sound & simplicity, and now includes added playability with a VariableQ high pass filter per channel, a re-designed 3-band EQ & RIAA Input stage, plus Innofader as standard. Two 36mm illuminated analogue VU meters provide accurate signal level monitoring of the mix buss, these automatically switch to monitoring the Cue level when a channel Cue is activated. If the signal level is excessive, the VU meter illumination will change from warm white to bright red",
+  },
+  {
+    name: "Technics SL-1200MK7",
+    thumbnail:
+      "https://media.sweetwater.com/api/i/q-82__w-750__f-webp__ha-4e66104e6c6c41dd__hmac-ef5f8627e8f5a67849234c709ec0b8f0226a9755/images/items/750/SL1200mk7S-large.jpg.auto.webp",
+    description:
+      "The original SL-1200 turntable was embraced by DJs in large part due to its innovative direct drive motor, offering unparalleled accuracy and long-term durability. With the SL-1200MK7, Technics introduces their coreless direct drive motor for even greater sound quality and precision. The coreless motor eliminates the potential for cogging — minor speed variations caused by the impulses of a traditional direct drive motor design.",
+  },
+  {
+    name: "Alpha Recording System 9100BW",
+    thumbnail:
+      "https://storage.googleapis.com/studio-design-asset-files/projects/1pqDPop6qj/s-2000x1733_v-frms_webp_c3fb4395-65f4-465f-b8d0-8f379d7e65d0_middle.webp",
+    description:
+      "ARS MODEL 9100BW DJ MIXER IS A JAPANESE MADE,4CH. ROTARY MIXER WITH WORLD'S FIRST 3BAND HYBRID ISOEQ. HI-EQ MID-EQ LOW -ISO ON EACH CHANNEL. THIS 4 CHANNEL HIGH QUALITY ROTARY DJ MIXER HAS A 3 BAND ISOLATOR ON THE MASTER.POTENTIOMETER AND SWITCH ARE ALL ALPS. A LONG TIME IN THE DEVELOPMENT PHASE THIS MIXER IS A BEAUTIFUL EXAMPLE OF JAPANESE HAND MADE PRECISION WORKMANSHIP.",
   },
 ];
 
